@@ -1,0 +1,924 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #3d2c29;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2d7b6;
+  padding: 15px;
+  border-bottom: 3px solid #a97449;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3d2c29;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #a97449;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 10px;
+  background-color: #a97449;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #f7e8d0;
+  color: #3d2c29;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #a97449;
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7e8d0;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+}
+
+/* aqui foi feito mudança*/
+p {
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+h1 {
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+h2 {
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+h3 {
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+/* centralizando a caixa de texto*/
+.container {
+  height: 100px;
+  /* Altura do elemento */
+  line-height: 100px;
+  /* Igual à altura */
+  text-align: center;
+  /* Para centralizar horizontalmente */
+}
+
+
+/* notificação   */
+
+/* ================================================
+   ESTILO EXCLUSIVO PARA A PÁGINA categoria.php
+   ================================================ */
+
+/* === ESTILO DO CORPO DA PÁGINA === */
+body.pagina-categoria {
+    font-family: 'Georgia', serif;
+    background-color: #fffaf4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* === CONTAINER CENTRAL === */
+main.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+/* === TÍTULO DA CATEGORIA === */
+.titulo-categoria {
+    text-align: center;
+    font-size: 28px;
+    color: #8b4513;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #deb887;
+}
+
+/* === GRADE DE RECEITAS === */
+.grid-receitas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* === CARD DE RECEITA === */
+.card-receita {
+    width: 280px;
+    background-color: #fffdf8;
+    border: 1px solid #deb887;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(160, 82, 45, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* === TÍTULO DA RECEITA NO CARD === */
+.receita-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* === IMAGEM DA RECEITA === */
+.card-receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* === BLOCO DE INGREDIENTES E PREPARO === */
+.receita-conteudo {
+    margin-top: 5px;
+}
+
+/* === CADA BLOCO DE CONTEÚDO === */
+.receita-bloco {
+    margin-bottom: 12px;
+}
+
+/* === TÍTULOS DOS BLOCOS === */
+.receita-bloco h4 {
+    font-size: 16px;
+    color: #a0522d;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #d2b48c;
+    padding-bottom: 3px;
+}
+
+/* === LISTA DE INGREDIENTES E MODO DE PREPARO === */
+.lista-ingredientes,
+.lista-preparo {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    margin: 0;
+}
+
+/* === BOTÃO "VER RECEITA COMPLETA" === */
+.btn {
+    background-color: #a0522d;
+    color: #fffaf4;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* === EFEITO HOVER DO BOTÃO === */
+.btn:hover {
+    background-color: #8b3e1c;
+}
+
+/* ================================================
+   RESPONSIVIDADE PARA TELAS MENORES
+   ================================================ */
+
+@media screen and (max-width: 768px) {
+    .card-receita {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .titulo-categoria {
+        font-size: 22px;
+    }
+
+    .receita-titulo {
+        font-size: 18px;
+    }
+
+    .receita-bloco h4 {
+        font-size: 15px;
+    }
+
+    .lista-ingredientes,
+    .lista-preparo {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+/*  css da pagina dashbord */
+ /* ================================================
+   ESTILO EXCLUSIVO PARA A PÁGINA dashboard.php
+   ================================================ */
+
+/* === ESTILO GERAL DO BODY === */
+body.pagina-dashbord {
+    font-family: Arial, sans-serif; /* Fonte limpa e legível */
+    background-color: #f9f9f9; /* Fundo suave e neutro */
+    margin: 20px;
+    color: #333;
+}
+
+/* === TÍTULOS PRINCIPAIS === */
+h2 {
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+/* === ESTILO GERAL DAS TABELAS === */
+table {
+    width: 100%; /* Tabela ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Sombra um pouco mais marcada */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* === CABEÇALHOS DAS TABELAS === */
+table th {
+    background-color: #3d5a80; /* Azul retrô escuro */
+    color: #fff; /* Texto branco */
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* === CÉLULAS DAS TABELAS === */
+table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #444;
+}
+
+/* === LINHAS ALTERNADAS (ZEBRA STRIPING) === */
+table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* === LINHA AO PASSAR O MOUSE (HOVER) === */
+table tr:hover {
+    background-color: #dbe9f4;
+    cursor: default;
+}
+
+/* === LINKS DE AÇÃO (ex: liberar) === */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004a99;
+    text-decoration: underline;
+}
+
+/* === BOTÃO DE SAIR === */
+a[href="../index.php"] {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ee6c4d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+a[href="../index.php"]:hover {
+    background-color: #d45d3a;
+}
+
+/* === RESPONSIVIDADE PARA TELAS PEQUENAS === */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none; /* Oculta cabeçalho para layout mobile */
+    }
+
+    tr {
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    td {
+        padding: 10px 10px 10px 50%;
+        position: relative;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    td::before {
+        content: attr(data-label); /* Usado para mostrar o nome da coluna */
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        font-weight: 700;
+        color: #3d5a80;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    a[href="../index.php"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ======================================================
+   CSS EXCLUSIVO PARA A PÁGINA adicionar_receita.php
+   Aplicado apenas quando o <body> tem a classe
+   "pagina-adicionar-receita"
+   ====================================================== */
+
+body.pagina-adicionar-receita {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e leve */
+  background-color: #fff8f0;      /* Fundo claro retrô */
+  padding: 0;
+  margin: 0;
+  color: #333;                   /* Cor do texto padrão */
+}
+
+/* Título centralizado e com estilo retrô */
+body.pagina-adicionar-receita h2 {
+  text-align: center;
+  color: #8b4513;                /* Marrom escuro */
+  font-size: 22px;
+  margin: 25px 0 10px 0;
+}
+
+/* Container central do formulário */
+body.pagina-adicionar-receita .container {
+  max-width: 420px;              /* Largura menor para visual mais compacto */
+  margin: 0 auto;                /* Centraliza na tela */
+  background-color: #fff;        /* Fundo branco para contraste */
+  border: 1px solid #d2b48c;     /* Borda bege suave */
+  padding: 20px 25px;            /* Espaço interno confortável */
+  border-radius: 10px;           /* Cantos arredondados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+/* Estilo dos rótulos (labels) */
+body.pagina-adicionar-receita label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #5a3e2b;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+/* Campos de entrada padrão */
+body.pagina-adicionar-receita input[type="text"],
+body.pagina-adicionar-receita select,
+body.pagina-adicionar-receita input[type="file"] {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  background-color: #fefefe;
+}
+
+/* Estilo dos textareas */
+body.pagina-adicionar-receita textarea {
+  width: 100%;
+  height: 80px;                   /* Altura menor e mais limpa */
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  resize: none;                   /* Remove alças de redimensionamento */
+  overflow: auto;
+  outline: none;
+  margin-bottom: 12px;
+  background-color: #fefefe;
+}
+
+/* Remove os risquinhos de redimensionamento no canto do textarea (WebKit e Firefox) */
+body.pagina-adicionar-receita textarea::-webkit-resizer,
+body.pagina-adicionar-receita textarea::-moz-resizer {
+  display: none;
+}
+
+/* Botão de envio estilizado */
+body.pagina-adicionar-receita button[type="submit"] {
+  width: 100%;
+  background-color: #a0522d;     /* Marrom retrô */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse no botão */
+body.pagina-adicionar-receita button[type="submit"]:hover {
+  background-color: #8b4513;     /* Tom mais escuro no hover */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  body.pagina-adicionar-receita .container {
+    padding: 15px 18px;
+    max-width: 90%;
+  }
+
+  body.pagina-adicionar-receita h2 {
+    font-size: 20px;
+  }
+}
+
+/* ============================================
+   CSS exclusivo para a página cadastro.php
+   (somente ativa com <body class="pagina-cadastro">)
+   ============================================ */
+
+/* Estilo geral do card de cadastro */
+.cadastro {
+  max-width: 360px;               /* Largura menor do card */
+  margin: 40px auto;              /* Centraliza na tela */
+  padding: 20px 18px;
+  background-color: #fffaf5;      /* Cor suave de fundo */
+  border-radius: 12px;            /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra leve */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #4a321b;
+  text-align: center;
+}
+
+/* Título */
+.cadastro h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #7a4e28;
+}
+
+/* Formulário centralizado com pouco espaçamento */
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;                       /* Menor espaço entre os grupos */
+  text-align: left;
+}
+
+/* Cada grupo: label + input */
+.form-cadastro .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label do campo */
+.form-cadastro label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;            /* Texto mais próximo do input */
+  color: #6b4b2b;
+}
+
+/* Input de texto */
+.form-cadastro input {
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #d9c9b5;
+  border-radius: 8px;            /* Bordas arredondadas */
+  outline-color: #a8764b;
+  background-color: #fffefc;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+/* Efeito ao focar */
+.form-cadastro input:focus {
+  border-color: #a8764b;
+}
+
+/* Botão de enviar */
+.btn-cadastrar {
+  margin-top: 12px;
+  background-color: #a8764b;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;            /* Botão arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover no botão */
+.btn-cadastrar:hover {
+  background-color: #8a5e38;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 480px) {
+  .cadastro {
+    margin: 20px;
+    padding: 16px;
+    max-width: 100%;
+  }
+}
+
+/*  PAGINA LOGIN*/
+
+/* ===== Estilo específico para a página login ===== */
+body.pagina-login {
+  background-color: #fef7f0;           /* Fundo claro suave e retrô */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte legível */
+
+  /* Centraliza o conteúdo horizontalmente, mas permite que o título fique no topo */
+  display: flex;
+  flex-direction: column;             /* Coloca os elementos em coluna */
+  align-items: center;                /* Centraliza horizontalmente */
+  justify-content: flex-start;        /* Alinha o conteúdo no topo verticalmente */
+
+  min-height: 100vh;                  /* Altura mínima para preencher a tela inteira */
+  margin: 0;                         /* Remove margens padrão */
+  padding: 40px 15px 20px 15px;      /* Espaçamento superior maior para o título */
+  box-sizing: border-box;
+}
+
+/* ===== Título da página ===== */
+body.pagina-login h2 {
+  color: #a97449;                    /* Cor retrô */
+  font-size: 28px;                  /* Tamanho confortável */
+  margin-bottom: 20px;              /* Espaçamento abaixo do título */
+  text-align: center;               /* Centraliza o texto */
+  width: 100%;                     /* Ocupa toda a largura possível */
+  max-width: 400px;                /* Limita a largura para alinhar com o formulário */
+}
+
+/* ===== Estilo do formulário ===== */
+body.pagina-login form {
+  background: #fff;                  /* Fundo branco para destaque */
+  padding: 30px 40px;               /* Espaçamento interno confortável */
+  border-radius: 10px;              /* Cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra suave para destacar */
+  max-width: 400px;                 /* Largura máxima para o formulário */
+  width: 100%;                     /* Responsivo para telas menores */
+  box-sizing: border-box;
+}
+
+/* ===== Rótulos dos campos ===== */
+body.pagina-login label {
+  display: block;                  /* Quebra linha para ficar acima do input */
+  margin-bottom: 6px;              /* Espaço entre label e campo */
+  font-weight: 600;                /* Negrito leve para destaque */
+  color: #5a3e2b;                  /* Cor marrom suave */
+  font-size: 14px;                 /* Tamanho pequeno e legível */
+}
+
+/* ===== Campos de entrada (inputs) ===== */
+body.pagina-login input[type="email"],
+body.pagina-login input[type="password"] {
+  width: 100%;                    /* Ocupa toda largura do formulário */
+  padding: 10px;                  /* Espaçamento interno confortável */
+  margin-bottom: 16px;            /* Espaço entre campos */
+  border: 1px solid #ccc;         /* Borda cinza clara */
+  border-radius: 6px;             /* Cantos arredondados */
+  font-size: 15px;                /* Fonte legível */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Transição suave para o foco */
+}
+
+/* ===== Efeito foco nos campos ===== */
+body.pagina-login input[type="email"]:focus,
+body.pagina-login input[type="password"]:focus {
+  border-color: #a97449;          /* Borda colorida no foco */
+  outline: none;                  /* Remove o contorno padrão */
+  box-shadow: 0 0 5px rgba(169,116,73,0.5); /* Sombra suave no foco */
+}
+
+/* ===== Botão de envio ===== */
+body.pagina-login button[type="submit"] {
+  width: 100%;                   /* Botão ocupa toda largura */
+  padding: 12px;                 /* Espaçamento interno maior */
+  background-color: #a97449;     /* Cor retrô chamativa */
+  color: white;                  /* Texto branco */
+  border: none;                  /* Sem borda */
+  border-radius: 6px;            /* Cantos arredondados */
+  font-size: 16px;               /* Texto grande */
+  font-weight: bold;             /* Negrito */
+  cursor: pointer;               /* Cursor mãozinha */
+  transition: background-color 0.3s ease;
+}
+
+/* ===== Efeito hover no botão ===== */
+body.pagina-login button[type="submit"]:hover {
+  background-color: #8a5c32;     /* Tom mais escuro no hover */
+}
+
+/* ===== Responsividade para telas pequenas ===== */
+@media (max-width: 480px) {
+  body.pagina-login {
+    padding: 30px 10px 15px 10px; /* Menor espaçamento em telas pequenas */
+  }
+
+  body.pagina-login h2 {
+    font-size: 24px;             /* Título menor */
+    max-width: 100%;             /* Ocupa toda a largura possível */
+  }
+
+  body.pagina-login form {
+    padding: 20px;               /* Menos espaçamento no formulário */
+    max-width: 100%;
+  }
+
+  body.pagina-login input,
+  body.pagina-login button {
+    font-size: 14px;             /* Texto menor em inputs e botão */
+  }
+}
+
+      /*PAGINA CONTATO.PHP*/
+
+/* Container principal da página contato */
+.container-contato {
+    background-color: #fefaf5;           /* Fundo suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte limpa e moderna */
+    color: #4a2d19;                     /* Cor do texto */
+    padding: 40px 20px;                 /* Espaço interno */
+    display: flex;
+    flex-direction: column;             /* Organiza itens em coluna */
+    align-items: center;                /* Centraliza horizontalmente */
+    text-align: center;                 /* Centraliza texto */
+    max-width: 700px;                   /* Largura máxima para não ficar muito largo */
+    margin: 0 auto;                    /* Centraliza o container na página */
+}
+
+/* Título principal */
+.container-contato .titulo-pagina {
+    font-size: 28px;                   /* Tamanho maior para destaque */
+    font-weight: 700;                  /* Negrito */
+    margin-bottom: 15px;               /* Espaço abaixo */
+    color: #9c5c38;                   /* Tom marrom mais forte */
+}
+
+/* Descrição da página */
+.container-contato .descricao-pagina {
+    font-size: 16px;                   /* Tamanho padrão para parágrafo */
+    line-height: 1.4;                  /* Espaçamento entre linhas um pouco menor para textos próximos */
+    margin-bottom: 25px;               /* Espaço maior abaixo */
+}
+
+/* Estilização do formulário */
+.container-contato .formulario-contato {
+    background-color: #fffdf8;          /* Fundo branco suave */
+    padding: 25px 30px;                 /* Espaço interno do formulário */
+    border-radius: 12px;                /* Bordas arredondadas */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    width: 100%;                       /* Largura total do container */
+    box-sizing: border-box;            /* Inclui padding na largura */
+}
+
+/* Cada grupo de input + label */
+.container-contato .form-group {
+    display: flex;
+    flex-direction: column;             /* Label em cima do input */
+    margin-bottom: 15px;                /* Espaço entre os grupos */
+}
+
+/* Label dos inputs */
+.container-contato .form-group label {
+    font-weight: 600;                   /* Semi-negrito */
+    margin-bottom: 6px;                 /* Pequeno espaço abaixo do label */
+    color: #6b3f28;                   /* Cor marrom escura */
+    font-size: 15px;                   /* Tamanho padrão */
+}
+
+/* Inputs e textarea */
+.container-contato .form-group input,
+.container-contato .form-group textarea {
+    padding: 10px 12px;                /* Espaço interno confortável */
+    font-size: 15px;                  /* Fonte legível */
+    border: 1.5px solid #c4b7a6;      /* Borda discreta */
+    border-radius: 7px;               /* Bordas arredondadas */
+    resize: none;                    /* Textarea não redimensionável */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mesma fonte do site */
+    outline-color: #9c5c38;          /* Cor da borda ao focar */
+    transition: border-color 0.3s ease; /* Suaviza mudança da borda */
+}
+
+/* Borda fica mais escura ao focar */
+.container-contato .form-group input:focus,
+.container-contato .form-group textarea:focus {
+    border-color: #9c5c38;
+}
+
+/* Botão de envio */
+.container-contato .botao-enviar {
+    background-color: #d18359;         /* Cor principal */
+    color: #fff;                      /* Texto branco */
+    border: none;
+    padding: 13px 25px;
+    font-size: 16px;                  /* Fonte um pouco maior */
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;                     /* Botão com largura total do formulário */
+    max-width: 300px;                /* Limitando largura para ficar proporcional */
+    margin: 15px auto 0 auto;        /* Centraliza horizontalmente com margem superior */
+}
+
+/* Efeito hover no botão */
+.container-contato .botao-enviar:hover {
+    background-color: #b66d47;        /* Tom mais escuro no hover */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container-contato {
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+
+    .container-contato .formulario-contato {
+        padding: 20px;
+    }
+
+    .container-contato .botao-enviar {
+        max-width: 100%;
+    }
+}
+
+         /* PAGINA SOBRE>PHP*/
+/* ===== Estilo principal da seção 'sobre' ===== */
+.sobre {
+  max-width: 800px;                  /* Largura máxima do conteúdo */
+  margin: 30px auto;                 /* Centraliza horizontalmente */
+  padding: 20px;                     /* Espaçamento interno */
+  background-color: #fffdf8;         /* Fundo claro estilo retrô */
+  border-radius: 10px;               /* Cantos arredondados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra leve */
+  font-family: 'Segoe UI', sans-serif;
+  color: #5e3c28;
+  text-align: center;                /* Centraliza todos os textos */
+}
+
+/* ===== Título principal ===== */
+.sobre h2 {
+  font-size: 24px;
+  color: #a97449;
+  margin-bottom: 8px;               /* Reduz o espaço inferior */
+  border-bottom: 1px solid #f0d9c1;
+  padding-bottom: 5px;
+}
+
+/* ===== Subtítulo ===== */
+.sobre h3 {
+  font-size: 20px;
+  color: #8a5c32;
+  margin-top: 15px;                 /* Menor margem superior */
+  margin-bottom: 5px;               /* Menor margem inferior */
+}
+
+/* ===== Parágrafos ===== */
+.sobre p {
+  font-size: 15px;
+  line-height: 1.4;                 /* Linhas um pouco mais compactas */
+  margin: 6px 0;                    /* Pouco espaço entre os parágrafos */
+  text-align: center;
+}
+
+/* ===== Lista ===== */
+.sobre ul {
+  list-style: none;                 /* Remove marcadores */
+  padding: 0;
+  margin: 8px 0;
+}
+
+.sobre li {
+  margin-bottom: 4px;               /* Espaço bem pequeno entre itens */
+  font-size: 15px;
+}
+
+/* ===== Negrito para nomes ===== */
+.sobre strong {
+  color: #7b4c28;
+  font-weight: bold;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  .sobre {
+    padding: 15px;
+  }
+
+  .sobre h2 {
+    font-size: 20px;
+  }
+
+  .sobre h3 {
+    font-size: 17px;
+  }
+
+  .sobre p,
+  .sobre li {
+    font-size: 14px;
+  }
+}
+
+ 
