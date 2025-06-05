@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($email === "admin@retro.com") {
                 header("Location: ../admin/dashboard.php");
             } elseif ($usuario["status"] === "liberado") {
-                header("Location: ../paginas/index.php");
+                header("Location: ../index.php");
             } else {
                 echo "<script>alert('Seu cadastro está pendente. Aguarde aprovação do administrador.'); window.location.href='login.php';</script>";
             }
@@ -34,24 +34,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body class="pagina-login">
-    
-    <h2>Login</h2>
-    <form method="post" action="">
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email" required><br><br>
-        <label for="senha">Senha:</label><br>
-        <input type="password" name="senha" required><br><br>
-        <button type="submit">Entrar</button> <br>
-        
-        <br><a href="../paginas/index.php">Sair</a>
-    </form>
-</body>
-</html>
+<?php include_once('../includes/header.php'); ?>
+
+<main class="login-container">
+    <section class="login-box">
+        <h2>Entrar na sua conta</h2>
+        <form method="post" action="">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p><a href="../index.php">← Voltar à página inicial</a></p>
+    </section>
+</main>
+
+<?php include_once('../includes/footer.php'); ?>

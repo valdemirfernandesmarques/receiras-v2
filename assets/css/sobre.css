@@ -1,0 +1,44 @@
+/* sobre.css - Estilização da página Sobre */
+
+.sobre {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+.sobre h2, .sobre h3 {
+  color: #553c2b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  margin-bottom: 0.8rem; /* Aproxima os parágrafos */
+  font-size: 1rem;
+}
+
+.sobre ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.sobre ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre {
+    padding: 1rem;
+  }
+
+  .sobre h2, .sobre h3 {
+    font-size: 1.2rem;
+  }
+
+  .sobre p {
+    font-size: 0.95rem;
+  }
+}

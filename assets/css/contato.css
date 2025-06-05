@@ -1,0 +1,101 @@
+/* contato.css */
+
+/* Container principal da página de contato */
+.container-contato {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f4f1; /* Cor de fundo suave */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título da página */
+.titulo-pagina {
+  font-size: 2rem;
+  color: #4a2c2a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Descrição da página com menos espaçamento */
+.descricao-pagina {
+  font-size: 1rem;
+  color: #6b4c4c;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4; /* Parágrafos mais juntos */
+}
+
+/* Estilo geral do formulário */
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grupos de campos do formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo dos rótulos */
+.form-group label {
+  margin-bottom: 5px;
+  color: #4a2c2a;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Estilo dos inputs e textarea */
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d9b89e;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fffaf7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #a3695a;
+}
+
+/* Botão estilizado */
+.botao-enviar {
+  background-color: #a3695a;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #7a4e43;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .container-contato {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .titulo-pagina {
+    font-size: 1.6rem;
+  }
+
+  .botao-enviar {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

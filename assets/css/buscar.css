@@ -1,0 +1,117 @@
+/* ================================
+   Estilo para a página de busca
+   ================================ */
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+/* Título da busca */
+h2 {
+    text-align: center;
+    color: #a0522d;
+    margin-top: 20px;
+}
+
+/* Mensagens de erro ou alerta */
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px auto;
+    color: #b22222;
+}
+
+/* Estilo da tabela de resultados */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4a460;
+    color: white;
+}
+
+/* Alterna cores das linhas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botão voltar */
+a.btn {
+    display: inline-block;
+    background-color: #a0522d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #8b4513;
+}
+
+/* =========================
+   Responsividade da Tabela
+   ========================= */
+@media (max-width: 768px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    td::before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #555;
+        content: attr(data-label);
+    }
+}

@@ -1,0 +1,151 @@
+/*
+  HEADER.CSS - Cabeçalho responsivo com design original do site Receitas Retrô
+  Responsivo com filtro de pesquisa centralizado
+  Estilização fiel à identidade retrô já usada no site
+*/
+
+/* Cabeçalho geral */
+header {
+  background-color: #f2d7b6; /* Fundo do cabeçalho com cor original */
+  border-bottom: 3px solid #a97449; /* Linha de separação */
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Container da navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Logo */
+.logo a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  font-weight: bold;
+  color: #3d2c29;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #a97449;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 8px 10px;
+  background-color: #a97449;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+/* Menu principal */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #f7e8d0;
+  color: #3d2c29;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #a97449;
+  color: #fff;
+}
+
+/* Dropdown (submenu de Receitas) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7e8d0;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  background-color: #f7e8d0;
+  color: #3d2c29;
+  border-radius: 0;
+}
+
+.dropdown-content li a:hover {
+  background-color: #a97449;
+  color: #fff;
+}
+
+/* Responsividade para celulares e tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}

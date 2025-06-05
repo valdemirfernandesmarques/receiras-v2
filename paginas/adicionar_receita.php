@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once '../includes/conexao.php';
+include_once('../includes/header.php');
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION["usuario_id"])) {
@@ -75,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Adicionar Receita</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/adicionar_receita.css">
 </head>
 
 <body class="pagina-adicionar-receita">

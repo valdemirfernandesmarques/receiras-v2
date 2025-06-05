@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once '../includes/conexao.php';
+include_once('../includes/header.php');
 
 // Verifica se é o admin logado
 if (!isset($_SESSION["usuario_email"]) || $_SESSION["usuario_email"] !== "admin@retro.com") {
@@ -48,6 +49,7 @@ $resultado_receitas = $conn->query($sql_receitas);
     <meta charset="UTF-8">
     <title>Painel do Administrador</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 <body class="pagina-dashboard">
     <h2>Usuários Cadastrados</h2>
@@ -101,5 +103,11 @@ $resultado_receitas = $conn->query($sql_receitas);
     </table>
 
     <br><a href="../index.php">Sair</a>
+    
+    
+
 </body>
+<?php include_once('../includes/footer.php'); ?>
 </html>
+
+ 

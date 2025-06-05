@@ -1,0 +1,149 @@
+/* =============================
+   Estilos da Página Categoria
+   ============================= */
+
+/* Container principal da página de categorias */
+.pagina-categoria {
+  padding: 30px 20px;
+  background-color: #fffaf4;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título da categoria */
+.titulo-categoria {
+  font-size: 2rem;
+  color: #8B4513; /* Marrom retrô */
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+/* Grid responsivo para os cards de receitas */
+.grid-receitas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Card de cada receita */
+.card-receita {
+  background-color: #fffaf1;
+  border: 2px solid #d9c2a3;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Título da receita */
+.receita-titulo {
+  font-size: 1.3rem;
+  color: #4b2e2e;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Parágrafo com autor e data */
+.autor-receita {
+  font-size: 0.9rem;
+  color: #6d4c41;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Imagem da receita */
+.card-receita img {
+  width: 100%;
+  max-height: 250px;          /* Limita a altura da imagem */
+  object-fit: cover;          /* Corta suavemente para se ajustar */
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #e3d1c5;
+}
+
+/* Conteúdo com ingredientes e preparo */
+.receita-conteudo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Bloco de ingredientes ou preparo */
+.receita-bloco {
+  background-color: #fff6ea;
+  border: 1px solid #e5cdb6;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Títulos dos blocos (Ingredientes, Modo de Preparo) */
+.receita-bloco h4 {
+  font-size: 1.1rem;
+  color: #7b4b3a;
+  margin-bottom: 8px;
+}
+
+/* Lista de ingredientes */
+.lista-ingredientes {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Lista do modo de preparo */
+.lista-preparo {
+  list-style: decimal inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Botão/link para voltar à página inicial */
+.card-receita .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #a0522d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-receita .btn:hover {
+  background-color: #8b4513;
+}
+
+
+/* ================
+   Responsividade
+   ================ */
+@media (max-width: 768px) {
+  .pagina-categoria {
+    padding: 20px 15px;
+  }
+
+  .titulo-categoria {
+    font-size: 1.6rem;
+  }
+
+  .receita-conteudo {
+    flex-direction: column;
+  }
+
+  .receita-bloco h4 {
+    font-size: 1rem;
+  }
+
+  .card-receita img {
+    max-height: 200px; /* Ajusta imagem em telas menores */
+  }
+
+  .card-receita .btn {
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,67 @@
+/* assets/css/style.css */
+
+/* Estilos base para corpo da página */
+body.pagina-adicionar-receita {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Título da página */
+h2 {
+    text-align: center;
+    color: #c75c5c;
+}
+
+/* Container do formulário */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs e Textareas */
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    background-color: #c75c5c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #a74646;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
